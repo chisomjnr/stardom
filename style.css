@@ -51,7 +51,7 @@ body::-webkit-scrollbar {
     box-shadow: 0 0 10px rgba(26, 26, 26, 0.064);
     background-color: rgb(0, 0, 0);
     z-index: 999999999;
-    border-top: 1px solid rgba(128, 128, 128, 0.186);
+    border-top: 1px solid rgba(128, 128, 128, 0.255);
     display: flex;
     overflow-x: auto;
 }
@@ -126,7 +126,7 @@ body::-webkit-scrollbar {
     width: 100%;
     background: #000;
     z-index: 20;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+    border-bottom:  1px solid rgba(128, 128, 128, 0.255);
 }
 
 .header .align-element {

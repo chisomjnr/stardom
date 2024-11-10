@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TikTok Clone</title>
+    <title>Stardom</title>
     <!-- CSS LINK -->
     <link rel="stylesheet" href="style.css" />
     <!-- BOX ICONS LINK  -->
@@ -32,7 +32,116 @@
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   </head>
-  <body>
+  Stardo<body>
+    <style>
+        /* Loader styling */
+        .loader {
+               display: none; /* Hidden by default */
+               position: fixed;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background-color: rgb(0, 0, 0);
+               justify-content: center;
+               align-items: center;
+               z-index: 100000000;
+               flex-direction: column; /* Arrange items in a column */
+           }
+   
+           /* Spinner animation */
+           .spinner {
+               width: 60px;
+               height: 60px;
+               border: 2px solid #f3f4f6;
+               border-top: 2px solid orange;
+               border-radius: 50%;
+               animation: spin 1s linear infinite;
+               margin-bottom: 15px; /* Adds space below spinner */
+           }
+   
+           /* Keyframes for spinner rotation */
+           @keyframes spin {
+               0% { transform: rotate(0deg); }
+               100% { transform: rotate(360deg); }
+           }
+   
+           /* Styling for loader text */
+           .loader p {
+               color: orange;
+               font-size: 46px;
+               text-align: center;
+           }
+
+         #star {
+  animation: spin 1s linear infinite; /* Apply animation to the star */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start from 0 degrees */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotate to 360 degrees */
+  }
+}
+
+   </style>
+   
+   <!-- Loader Overlay -->
+   <div class="loader" id="loader">
+
+       <p><i id="star" class="fas fa-star"></i></p>
+   </div>
+   
+
+
+   <script>
+    // Variables to track touch positions and one-time loader trigger
+    let startY = 0;
+    let endY = 0;
+    let loaderShownOnce = false;
+
+    // Function to show the loader
+    function showLoaderAndRefresh() {
+        document.getElementById("loader").style.display = "flex";
+        setTimeout(() => {
+            location.reload();
+        }, 1000); // Wait for 1 second before reloading the page
+    }
+
+    // Automatically show loader 2 seconds after page load (only once)
+    window.addEventListener("load", function() {
+        setTimeout(() => {
+            if (!loaderShownOnce) { // Check if loader hasn't been shown before
+                document.getElementById("loader").style.display = "flex";
+                loaderShownOnce = true; // Set the flag to true
+                setTimeout(() => {
+                    document.getElementById("loader").style.display = "none"; // Hide loader after 2 seconds
+                }, 2000); // Hide the loader after 2 seconds
+            }
+        }, 0); // Show the loader 2 seconds after page opens
+    });
+
+    // Detect the touch start (finger down)
+    document.body.addEventListener("touchstart", function(e) {
+        startY = e.touches[0].clientY;
+    });
+
+    // Detect the touch end (finger up)
+    document.body.addEventListener("touchend", function(e) {
+        endY = e.changedTouches[0].clientY;
+
+        // Check if the swipe was a downward swipe
+        if (endY - startY > 100) {
+            // Show the loader and refresh the page
+            if (!loaderShownOnce) {
+                showLoaderAndRefresh();
+                loaderShownOnce = true; // Set the flag to true to prevent re-triggering
+            }
+        }
+    });
+</script>m
 
     <nav class="nav">
         <a href="index.html" class="nav__link 
