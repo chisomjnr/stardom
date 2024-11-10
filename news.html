@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTok Clone</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- BOX ICONS LINK  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+            <!-- Font Awesome CDN -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+ 
+         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+         <link
+         href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+         rel="stylesheet"
+       />
+
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  <body>
+
+    <nav class="nav">
+        <a href="index.html" class="nav__link ">
+            <i class="bx bx-home"></i>
+            <span class="nav__text">Home</span>
+          </a>
+          
+          <a href="search.html" class="nav__link">
+            <i class="bx bx-search"></i>
+            <span class="nav__text">Search</span>
+          </a>
+          
+          <a href="news.html" class="nav__link nav__link--active">
+            <i class="bx bx-news"></i>
+            <span class="nav__text">News</span>
+          </a>
+          
+          <a href="podcast.html" class="nav__link">
+            <i class="bx bx-podcast"></i>
+            <span class="nav__text">Podcast</span>
+          </a>
+          
+          <a href="music.html" class="nav__link">
+            <i class="bx bx-music"></i>
+            <span class="nav__text">Music</span>
+          </a>
+      
+  
+  </nav>
+    <!-- HEADER  -->
+    <div class="header">
+      <div class="align-element">
+        <!-- LOGO  -->
+        <a href="#" class="logo">
+          <span><i class="fas fa-star"></i></span>
+          <h4> Stardom.</h4>
+        </a>
+        <!-- SEARCH INPUT  -->
+        <div class="search-input">
+          <div class="input-box">
+            <input type="text" placeholder="Search" />
+            <button><i class="bx bx-search"></i></button>
+          </div>
+        </div>
+        <!-- SMART ICONS  -->
+        <div class="smart-icons">
+          <button id="xo" class="upload-btn">
+            <i class="bx bx-plus"></i>
+            Upload
+          </button>
+          <span><i class="bx bx-send"></i></span>
+          <span class="notification">
+            <i class="bx bx-message-dots"></i>
+            <span class="notification-badge">6</span>
+          </span>
+          <div class="profile">
+            <img src="img/profile.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+<style>
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.body{
+ 
+  display: flex;
+  flex-direction: column; /* Stack the items vertically */
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start of the container */
+  padding: 10px;
+
+}
+.wrapper{
+  max-width: 905px;
+  background: #4c4c4c00;
+
+  padding: 20px ;
+border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+ 
+}
+header, .content :where(i, p, span){
+  color: #d7d7d7;
+}
+.wrapper header{
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+}
+.wrapper .content{
+  margin: 35px 0;
+}
+.content .quote-area{
+  display: flex;
+  justify-content: center;
+}
+.quote-area i{
+  font-size: 10px;
+  display: none;
+}
+.quote-area i:first-child{
+  margin: 3px 10px 0 0;
+}
+.quote-area i:last-child{
+  display: flex;
+  margin: 0 0 3px 10px;
+  align-items: flex-end;
+}
+.quote-area .quote{
+  font-size: 15px;
+  text-align: left;
+  word-break: break-all;
+}
+.content .author{
+  display: flex;
+  font-size: 13px;
+  margin-top: 20px;
+  font-style: italic;
+  justify-content: flex-end;
+}
+.author span:first-child{
+  margin: -7px 5px 0 0;
+  font-family: monospace;
+}
+
+.buttons .features{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.features ul{
+  display: flex;
+}
+.features ul li{
+  margin: 0 5px;
+  height: 37px;
+  width: 37px;
+  display: flex;
+  cursor: pointer;
+  color: orange;
+  list-style: none;
+  font-size: 15px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid orange; */
+  transition: all 0.3s ease;
+}
+.features ul li:first-child{
+  margin-left: 0;
+}
+ul li:is(:hover, .active){
+  color: #fff;
+  background: orange;
+}
+ul .speech.active{
+  pointer-events: none;
+}
+.buttons button{
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: orange;
+}
+.buttons button.loading{
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+    <section class="body">
+ 
+            <div class="wrapper">
+              <header>News Title</header>
+              <div class="content">
+                <div class="quote-area">
+                  <i class="fas fa-quote-left"></i>
+                  <p class="quote">News words: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, laboriosam eius </p>
+                  <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="author">
+                  <span>__</span>
+                  <span class="name">Mary Kay Ash</span>
+                </div>
+              </div>
+              <div class="buttons">
+                <div class="features">
+                  <ul>
+                    <li class="speech"><i class="fas fa-volume-up"></i></li>
+                    <li class="copy"><i class="fas fa-copy"></i></li>
+                    <li class="twitter"><i class="fas fa-retweet"></i></li>
+                  </ul>
+                  <button>Read More</button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="wrapper">
+                <header>News Title</header>
+                <div class="content">
+                  <div class="quote-area">
+                    <i class="fas fa-quote-left"></i>
+                    <p class="quote">News words: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, laboriosam eius </p>
+                    <i class="fas fa-quote-right"></i>
+                  </div>
+                  <div class="author">
+                    <span>__</span>
+                    <span class="name">Mary Kay Ash</span>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <div class="features">
+                    <ul>
+                      <li class="speech"><i class="fas fa-volume-up"></i></li>
+                      <li class="copy"><i class="fas fa-copy"></i></li>
+                      <li class="twitter"><i class="fas fa-retweet"></i></li>
+                    </ul>
+                    <button>Read More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wrapper">
+                <header>News Title</header>
+                <div class="content">
+                  <div class="quote-area">
+                    <i class="fas fa-quote-left"></i>
+                    <p class="quote">News words: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, laboriosam eius </p>
+                    <i class="fas fa-quote-right"></i>
+                  </div>
+                  <div class="author">
+                    <span>__</span>
+                    <span class="name">Mary Kay Ash</span>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <div class="features">
+                    <ul>
+                      <li class="speech"><i class="fas fa-volume-up"></i></li>
+                      <li class="copy"><i class="fas fa-copy"></i></li>
+                      <li class="twitter"><i class="fas fa-retweet"></i></li>
+                    </ul>
+                    <button>Read More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wrapper">
+                <header>News Title</header>
+                <div class="content">
+                  <div class="quote-area">
+                    <i class="fas fa-quote-left"></i>
+                    <p class="quote">News words: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, laboriosam eius </p>
+                    <i class="fas fa-quote-right"></i>
+                  </div>
+                  <div class="author">
+                    <span>__</span>
+                    <span class="name">Mary Kay Ash</span>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <div class="features">
+                    <ul>
+                      <li class="speech"><i class="fas fa-volume-up"></i></li>
+                      <li class="copy"><i class="fas fa-copy"></i></li>
+                      <li class="twitter"><i class="fas fa-retweet"></i></li>
+                    </ul>
+                    <button>Read More</button>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+              <br>
+
+    </section>
+
+<script>
+    const quoteText = document.querySelector(".quote"),
+quoteBtn = document.querySelector("button"),
+authorName = document.querySelector(".name"),
+speechBtn = document.querySelector(".speech"),
+copyBtn = document.querySelector(".copy"),
+twitterBtn = document.querySelector(".twitter"),
+synth = speechSynthesis;
+
+function randomQuote(){
+    quoteBtn.classList.add("loading");
+    quoteBtn.innerText = "Loading Quote...";
+    fetch("http://api.quotable.io/random").then(response => response.json()).then(result => {
+        quoteText.innerText = result.content;
+        authorName.innerText = result.author;
+        quoteBtn.classList.remove("loading");
+        quoteBtn.innerText = "New Quote";
+    });
+}
+
+speechBtn.addEventListener("click", ()=>{
+    if(!quoteBtn.classList.contains("loading")){
+        let utterance = new SpeechSynthesisUtterance(`${quoteText.innerText} by ${authorName.innerText}`);
+        synth.speak(utterance);
+        setInterval(()=>{
+            !synth.speaking ? speechBtn.classList.remove("active") : speechBtn.classList.add("active");
+        }, 10);
+    }
+});
+
+copyBtn.addEventListener("click", ()=>{
+    navigator.clipboard.writeText(quoteText.innerText);
+});
+
+twitterBtn.addEventListener("click", ()=>{
+    let tweetUrl = `https://twitter.com/intent/tweet?url=${quoteText.innerText}`;
+    window.open(tweetUrl, "_blank");
+});
+
+quoteBtn.addEventListener("click", randomQuote);
+</script>
+
+
+
+
+
+    <!-- SCRIPT LINK  -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTok Clone</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- BOX ICONS LINK  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+            <!-- Font Awesome CDN -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+ 
+         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+         <link
+         href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+         rel="stylesheet"
+       />
+
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  <body style="  scroll-snap-type: y mandatory;
+    overflow-y: scroll;">
+
+    <nav class="nav">
+        <a href="index.html" class="nav__link ">
+            <i class="bx bx-home"></i>
+            <span class="nav__text">Home</span>
+          </a>
+          
+          <a href="search.html" class="nav__link nav__link--active">
+            <i class="bx bx-search"></i>
+            <span class="nav__text">Search</span>
+          </a>
+          
+          <a href="news.html" class="nav__link">
+            <i class="bx bx-news"></i>
+            <span class="nav__text">News</span>
+          </a>
+          
+          <a href="podcast.html" class="nav__link">
+            <i class="bx bx-podcast"></i>
+            <span class="nav__text">Podcast</span>
+          </a>
+          
+          <a href="music.html" class="nav__link">
+            <i class="bx bx-music"></i>
+            <span class="nav__text">Music</span>
+          </a>
+      
+  
+  </nav>
+    <!-- HEADER  -->
+    <div class="header">
+      <div class="align-element">
+        <!-- LOGO  -->
+        <a href="#" class="logo">
+          <span><i class="fas fa-star"></i></span>
+          <h4> Stardom.</h4>
+        </a>
+        <!-- SEARCH INPUT  -->
+        <div class="search-input">
+          <div class="input-box">
+            <input type="text" placeholder="Search" />
+            <button><i class="bx bx-search"></i></button>
+          </div>
+        </div>
+        <!-- SMART ICONS  -->
+        <div class="smart-icons">
+          <button id="xo" class="upload-btn">
+            <i class="bx bx-plus"></i>
+            Upload
+          </button>
+          <span><i class="bx bx-send"></i></span>
+          <span class="notification">
+            <i class="bx bx-message-dots"></i>
+            <span class="notification-badge">6</span>
+          </span>
+          <div class="profile">
+            <img src="img/profile.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+<style>
+    /* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.container .search-box{
+    position: relative;
+    height: 50px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.search-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #323334;
+    padding: 0 15px 0 45px;
+    color: #fff;
+    border-radius: 10px;
+}
+.search-box i{
+    position: absolute;
+    z-index: 2;
+    color: orange;
+    top: 50%;
+    left: 15px;
+    font-size: 25px;
+    transform: translateY(-50%);
+}
+.container .images .image-box{
+    position: relative;
+    height: 400px;
+    width: 410px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.images{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.images .image-box{
+    margin: 8px;
+}
+.images .image-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.2s linear;
+}
+.image-box:hover img{
+    transform: scale(1.05);
+}
+.image-box h6{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+</style>
+
+
+
+
+
+
+
+
+
+    <div   class="container">
+<br>
+<br>
+      
+        <div class="search-box">
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search for content">
+        </div>
+     <p style="color: rgb(104, 104, 104); text-align: center; font-size: 13px; padding: 10px;">Search for users videos, songs, news, tutorials, podcasts or the latest trends</p>
+       
+   
+
+    <style>
+        .body {
+          display: flex;
+          justify-content: center;
+          background-color: #121212;
+          margin: 0;
+          padding: 0;
+        
+          
+
+        }
+        .containerr {
+          width: 100%;
+          max-width: 500px;
+        }
+        .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+    .grid-item {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 100%; /* Makes the item a square */
+    }
+    .grid-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image covers the container */
+    }
+    .icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 2px 5px;
+      color: #fff;
+      border-radius: 3px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+    }
+      </style>
+<br>
+    <section class="body">
+      <div class="containerr">
+        <div class="grid">
+          <!-- First row -->
+          <div class="grid-item">
+            <img src="images/5872840102349227184.jpg" alt="Image 1">
+          </div>
+          <div class="grid-item">
+            <img src="images/5872840102349227183.jpg" alt="Image 2">
+          </div>
+          <div class="grid-item">
+            <img src="images/5872840102349227182.jpg" alt="Image 3">
+          </div>
+    
+          <!-- Second row -->
+          <div class="grid-item">
+            <img src="images/5872840102349227181.jpg" alt="Image 4">
+          </div>
+          <div class="grid-item">
+            <img src="images/5872840102349227177.jpg" alt="Image 5">
+          </div>
+          <div class="grid-item">
+            <img src="images/5872840102349227178.jpg" alt="Image 6">
+          </div>
+    
+          <!-- Third row -->
+          <div class="grid-item">
+            <img src="images/5872840102349227180.jpg" alt="Image 7">
+          </div>
+          <div class="grid-item">
+            <img src="images/holiday.jpg" alt="Image 8">
+          </div>
+          <div class="grid-item">
+            <img src="images/ironman2.jpg" alt="Image 9">
+          </div>
+        </div>
+      </div>
+    </section>
+<br>
+<br>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPT LINK  -->
+    <script src="script.js"></script>
+  </body>
+</html>
