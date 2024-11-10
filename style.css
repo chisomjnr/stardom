@@ -87,7 +87,7 @@ body::-webkit-scrollbar {
 }
 
 .nav__link i {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -122,7 +122,7 @@ body::-webkit-scrollbar {
     position: fixed;
     left: 0;
     top: 0;
-    height: 50px;
+    height: 55px;
     width: 100%;
     background: #000;
     z-index: 20;
@@ -140,16 +140,20 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: baseline;
     cursor: pointer;
+  
     text-decoration: none;
 }
 
 .header .align-element .logo i {
-    font-size: 22px;
+    font-size: 25px;
+    margin-right: 8px;
     color: #fff;
 }
 
+
+
 .header .align-element .logo h4 {
-    font-size: 20px;
+    font-size: 27px;
     color: #fff;
 }
 
@@ -207,7 +211,7 @@ body::-webkit-scrollbar {
 }
 
 .header .align-element .search-input .input-box button i {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .header .align-element .search-input .input-box:hover button {
@@ -236,7 +240,7 @@ body::-webkit-scrollbar {
 }
 
 .header .align-element .smart-icons span i {
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .header .align-element .smart-icons .notification {
@@ -247,7 +251,7 @@ body::-webkit-scrollbar {
     position: absolute;
     top: -8px;
     right: -8px;
-    background: rgb(255, 59, 92);
+    background: orange;
     font-size: 10px;
     color: #fff;
     height: 18px;
@@ -259,8 +263,8 @@ body::-webkit-scrollbar {
 }
 
 .header .align-element .smart-icons .profile img {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     object-fit: cover;
     border-radius: 50%;
     cursor: pointer;
@@ -493,6 +497,10 @@ body::-webkit-scrollbar {
     object-fit: cover;
 }
 
+
+
+
+
 .videos .video .video-box .video-info .video-section .video-play-icon {
     position: absolute;
     left: 0;
@@ -536,13 +544,14 @@ body::-webkit-scrollbar {
 
 .videos .video .video-box .video-info .user-info h5 {
     color: #fff;
-    font-size: 13px;
+    font-size: 20px;
 }
 
 .videos .video .video-box .video-info .user-info p {
     color: #fff;
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 5px;
+    max-width: 350px;
 }
 
 .videos .video .video-box .video-desc {
@@ -556,8 +565,8 @@ body::-webkit-scrollbar {
 }
 
 .videos .video .video-box .video-desc .user-profile img {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -566,7 +575,7 @@ body::-webkit-scrollbar {
     position: absolute;
     left: 8px;
     bottom: 0;
-    background: rgb(255, 59, 92);
+    background: rgb(255, 173, 59);
     width: 20px;
     height: 20px;
     display: flex;
@@ -577,7 +586,7 @@ body::-webkit-scrollbar {
 }
 
 .videos .video .video-box .video-desc .user-profile .follow i {
-    color: #fff;
+    color: #000000;
 }
 
 .videos .video .video-box .video-desc ul li {
@@ -589,13 +598,13 @@ body::-webkit-scrollbar {
 }
 
 .videos .video .video-box .video-desc ul li span:first-child {
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
     background: rgba(255, 255, 255, 0.09);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 10px;
     margin-bottom: 5px;
     cursor: pointer;
 }
@@ -606,6 +615,7 @@ body::-webkit-scrollbar {
 
 .videos .video .video-box .video-desc ul li span:first-child i {
     color: #fff;
+    font-size: 30px;
 }
 
 .videos .video .video-box .video-desc ul li span:last-child {
