@@ -523,6 +523,47 @@ body{
     width: 100%;
   }
 }
+
+.wrapperr {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+  padding-bottom: 10px;
+}
+
+.items {
+  display: inline-flex; /* Keep items in a horizontal line */
+  gap: 10px; /* Add space between items */
+}
+
+.item {
+  display: inline-block; /* Ensure items stay in a line */
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Target the scrollbar */
+.wrapperr::-webkit-scrollbar {
+  height: 1px; /* Set the height of the scrollbar */
+
+}
+
+/* Style the scrollbar track */
+.wrapperr::-webkit-scrollbar-track {
+  background: #000000; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the scrollbar thumb */
+.wrapperr::-webkit-scrollbar-thumb {
+  background: orange; /* Darker color for the thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the scrollbar thumb on hover */
+.wrapperr::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker shade when hovering */
+}
+
 </style>
 
 
