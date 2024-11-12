@@ -83,7 +83,7 @@ body::-webkit-scrollbar {
 
 .nav__link--active {
     color: orange;
-    background: rgba(255, 166, 0, 0.041);
+    background: rgba(255, 166, 0, 0.118);
 }
 
 .nav__link i {
