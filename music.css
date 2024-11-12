@@ -230,7 +230,7 @@ background: #f6b323;
   pointer-events: auto;
 }
 
-.header .row {
+.headerr .row {
   display: flex;
   align-items: center;
   font-size: 19px;
@@ -238,16 +238,16 @@ background: #f6b323;
 
 }
 
-.header .row i {
+.headerr .row i {
   cursor: default;
 
 }
 
-.header .row span {
+.headerr .row span {
   margin-left: 5px;
 }
 
-.header #close {
+.headerr #close {
   font-size: 22px;
   color: orange;
 }
